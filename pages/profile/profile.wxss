@@ -1,0 +1,46 @@
+/* pages/profile/profile.wxss */
+page{
+  background-color: #ccc;
+}
+.top {
+  background-color: #3a4862;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top image {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.top {
+  width: 750rpx;
+  height: 488rpx;
+}
+.item {
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+}
+.f-l{
+   margin-top: 30rpx;
+   margin-bottom: 30rpx;
+}
+.item text{
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 105rpx;
+  line-height: 105rpx;
+  padding:0 30rpx;
+}
+.align {
+  text-align: right;
+}

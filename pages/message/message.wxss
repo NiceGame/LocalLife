@@ -1,0 +1,43 @@
+.map_container{ 
+    height: 360rpx; 
+    width: 100%; 
+} 
+.map { 
+    width: 100%; 
+    position: fixed;
+} 
+.search {
+  line-height: 40px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+
+}
+.search input{
+  height: 100%;
+  flex: 3;
+  background-color:rgba(0, 0, 0, 0.35);
+  color: #ccc;
+  border-radius: 10px;
+}
+.search .btn {
+  flex: 1;
+  background-color: green;
+  border-radius: 10px;
+}
+.place_info{
+    overflow: hidden;
+    position: relative;
+}
+.place_info view {
+  margin-bottom: 15px;
+  padding-left: 10rpx;
+  border-bottom: 1px solid #ccc;
+}
+.place_info text{
+  display: block;
+  line-height: 25px;
+  font-size: 14px;
+}

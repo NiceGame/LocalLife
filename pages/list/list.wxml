@@ -1,0 +1,17 @@
+<view>
+  <navigator wx:for="{{shopList}}" wx:key="id" class='item' url='../detail/detail?id={{item.id}}'>
+    <view>
+      <image src="{{item.images[0]}}" mode='widthFix'></image>
+    </view>
+    <view class='list'>
+      <text class='title'>{{item.name}}</text>
+      <text>电话：{{item.phone}}</text>
+      <text>地址：{{item.address}}</text>
+      <text>营业时间：{{item.businessHours}}</text>
+    </view>
+      <text class='score'>100</text>
+  </navigator>
+</view>
+<view wx:if="{{!status}}" style='padding: 20rpx;'>
+  <text>{{tip}}</text>
+</view>

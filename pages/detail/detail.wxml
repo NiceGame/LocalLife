@@ -1,0 +1,37 @@
+<swiper class='item1' autoplay indicator-dots interval='2000' circular='true' indicator-color="#fff">
+  <swiper-item wx:for='{{tools.Slice(details.images)}}' wx:key='*this' class='item2'>
+    <image src="{{item}}"></image>
+  </swiper-item>
+</swiper>
+<!-- 描述 -->
+<view class='description'>
+  <text class='text-one'>{{details['name']}}</text>
+  <text>电话：{{details['phone']}}</text>
+  <text>地址：{{details['address']}}</text>
+  <text>营业时间：{{details['businessHours']}}</text>
+</view>
+
+<!-- 评论 -->
+<view wx:for="{{details.comments}}" wx:key="id" class='comment'>
+  <view class='first'>
+    <text class='first'>{{item['name']}}</text>
+    <text class='seconder'>{{item['date']}}</text>
+  </view>
+  <text class='third'>{{item['content']}}</text>
+  <view class='commentimg'>
+   <image wx:for="{{item.images}}" wx:key="id" src='{{tools.Replace(item)}}'  ></image>
+  </view>
+</view>
+<!-- 微信小程序的插值表达式里面不能用原生js的方法，可以使用下面的模块对其封装 -->
+  <wxs module="tools">
+    var replace = function(str){
+        return str.replace('w.h','110.110');
+    };
+    var slice = function(arr){
+           return arr.slice(0,6);
+    };
+    module.exports = {
+        Replace : replace,
+        Slice : slice
+    }
+  </wxs>

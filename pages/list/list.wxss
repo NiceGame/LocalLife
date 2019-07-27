@@ -1,0 +1,36 @@
+.item {
+  float: left;
+  display: flex;
+  width: 100%;
+  margin: 10rpx 10rpx;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.item image {
+ display: block;
+ width: 200rpx;
+ margin-right: 10rpx;
+}
+.item text {
+  font-size: 14px;
+  color: #668cba;
+}
+.item .list {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+}
+.item .title {
+  color: #000;
+}
+.score {
+  position: absolute;
+  top: 0;
+  right: 10rpx;
+  background-color: #ee523d;
+  line-height: 40rpx;
+  text-align: center;
+  width: 80rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+}

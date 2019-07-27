@@ -1,0 +1,16 @@
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap">
+  </map>
+</view>
+<view class="place_info">
+  <view class='search'>
+    <input type='text' placeholder='为你推荐好去处' placeholder-style='color:#ccc' id='search-value' bindinput='input_change'></input>
+    <button class='btn' bindtap='search'>搜索</button>
+  </view>
+  <text wx:if="{{markers.length == 0}}" style='font-size:20px;margin-left:13px;margin-top:30px'>打开位置信息，刷新即可获取周边信息</text>
+  <view wx:for="{{markers}}" wx:key="id">
+    <text>名字(name)：{{item.title}}</text>
+    <text>位置(adress)：{{item.address}}</text>
+    <text>联系电话(telephone)：{{item.telephone?item.telephone:'未知'}}</text>
+  </view>
+</view>

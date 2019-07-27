@@ -1,0 +1,45 @@
+/* 轮播图 */
+.item2 {
+  width: 750rpx;
+  height: 750rpx;
+  overflow: hidden;
+}
+.item2 image{
+  width: 100%;
+}
+
+/* 描述 */
+.description {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 30rpx;
+}
+.description text{
+  font-size: 30rpx;
+  color: #556677;
+  line-height: 40rpx;
+}
+.description .text-one {
+  color: #000;
+  font-size: 40rpx;
+}
+
+/* 评论 */
+.comment {
+  margin: 40rpx 30rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid #ccc;
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15rpx;
+}
+.commentimg {
+  display: flex;
+
+}
+.commentimg image {
+  width: 110rpx;
+  height: 110rpx;
+}

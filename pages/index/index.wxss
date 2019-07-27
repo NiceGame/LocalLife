@@ -1,0 +1,49 @@
+page {
+  background-color: #aaa;
+}
+/* 轮播图布局 */
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+swiper {
+  /* swiper默认高度为150px，即300rpx，而图片根据高度自适应，会超出默认高       度*/
+  height: 340rpx;
+  width: 100%;
+}
+
+/* 九宫格布局  */
+.outer {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.outer .item {
+  width: 250rpx;
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing:border-box;
+}
+.outer image {
+  width: 80rpx;
+  height: 80rpx;
+  border-bottom: 20rpx;
+
+}
+
+/* 底部链接样式 */
+.outer1 {
+  background-color: #fff;
+  display: flex;
+  margin: 10rpx 0;
+  padding:10rpx 20rpx;
+  justify-content: space-between;
+}
+.outer1 image{
+  width: 340rpx;
+}
